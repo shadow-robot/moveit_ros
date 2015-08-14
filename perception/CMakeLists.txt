@@ -29,7 +29,6 @@ find_package(catkin REQUIRED COMPONENTS
   object_recognition_msgs
   cmake_modules
   sensor_msgs
-  moveit_msgs
 )
 find_package(Eigen REQUIRED)
 
@@ -56,8 +55,7 @@ catkin_package(
     ${OCTOMAP_LIBRARIES}
   CATKIN_DEPENDS
     moveit_core
-    image_transport
-    moveit_msgs)
+    image_transport)
 
 include_directories(mesh_filter/include
                     lazy_free_space_updater/include
